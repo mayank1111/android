@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:background="@drawable/abc"
+    >
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text=""
+        android:textSize="30dp"
+        />
+    
+     <TextView
+        android:id="@+id/donationsItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_weight="0.7"
+        android:text="   DONATE ITEMS"
+        android:textStyle="italic|bold"
+        android:textSize="25dp" />
+     <HorizontalScrollView
+          android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+        >  
+          
+        <LinearLayout android:id="@+id/_linearLayout"  
+          android:layout_width="match_parent"  
+          android:layout_height="match_parent"  
+          android:orientation="horizontal"
+          
+          >  
+            
+        </LinearLayout>  
+          
+      </HorizontalScrollView>  
+      
+     <TextView
+        android:id="@+id/serachNGOsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_weight="0.7"
+        android:text="  SEARCH NGOS"
+        android:textStyle="italic|bold"
+        android:textSize="25dp" />
+     
+      <HorizontalScrollView
+          android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+      >  
+          
+        <LinearLayout android:id="@+id/_linearLayout1"  
+          android:layout_width="match_parent"  
+          android:layout_height="match_parent"  
+          android:orientation="horizontal">  
+            
+        </LinearLayout>  
+          
+      </HorizontalScrollView>
+     
+
+</LinearLayout>
