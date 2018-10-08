@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_avg"
+    android:paddingStart="@dimen/padding_avg"
+    android:paddingTop="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/text_view_user_alphabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_accent"
+
+        android:gravity="center"
+        android:maxEms="1"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_100"
+        android:textStyle="bold"
+        android:text="a" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space"
+        android:layout_width="@dimen/space_avg"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_user_alphabet"/>
+
+    <TextView
+        android:id="@+id/text_view_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_100"
+        android:layout_toRightOf="@+id/space"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="abcd@xyz.com" />
+
+
+    <EditText
+        android:background="@color/yellow_50"
+        android:id="@+id/text_campaignName"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Campaign Cause"
+        android:layout_below="@+id/text_view_username"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="Raising Fund for Cancer Treatment" />
+
+
+    <TextView
+        android:id="@+id/text_start_Date"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_campaignName"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="Start Date" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space1"
+        android:layout_width="@dimen/space_avg"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_start_Date"/>
+
+
+    <EditText
+        android:id="@+id/text_campaignStart_Date"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_campaignName"
+        android:layout_toRightOf="@+id/space1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="Oct 6 2018" />
+
+
+    <TextView
+        android:id="@+id/text_End_Date"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_start_Date"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="End Date" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space2"
+        android:layout_width="@dimen/space_avg"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_start_Date"/>
+
+
+    <EditText
+        android:id="@+id/text_campaignEnd_Date"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_start_Date"
+        android:layout_toRightOf="@+id/space1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="Oct 6 2020" />
+
+    <EditText
+        android:id="@+id/text_campaign_Description"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_End_Date"
+
+        android:ellipsize="end"
+        android:maxLines="10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:hint="This is a crowd fund raising event for treatment of cancer patient. Urgent help is needed . Your little support can save life." />
+
+
+    <TextView
+        android:id="@+id/text_FundRaised"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_campaign_Description"
+
+        android:ellipsize="end"
+        android:maxLines="10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="Currently Fund Raised" />
+
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space3"
+        android:layout_width="@dimen/space_avg"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_FundRaised"/>
+
+
+    <EditText
+        android:hint="0"
+        android:id="@+id/text_campaignFundRaised"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_campaign_Description"
+        android:layout_toRightOf="@+id/space3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        />
+
+
+    <TextView
+        android:id="@+id/text_FundToRaise"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_campaignFundRaised"
+
+        android:ellipsize="end"
+        android:maxLines="10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        android:text="Fund to Raise" />
+
+
+    <android.support.v4.widget.Space
+        android:id="@+id/space4"
+        android:layout_width="@dimen/space_avg"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_FundRaised"/>
+
+
+    <EditText
+        android:id="@+id/text_campaignFundToRaise"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_campaignFundRaised"
+        android:layout_toRightOf="@+id/space3"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grey_700"
+        />
+
+
+
+    <Button
+        android:layout_below="@+id/text_campaignFundToRaise"
+        android:id="@+id/btnShare"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue_400"
+        android:text="Share"/>
+</RelativeLayout>
